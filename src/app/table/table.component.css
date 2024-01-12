@@ -1,0 +1,61 @@
+.custom-table {
+    width: 100vw;
+    height: 50vh;
+    border-collapse: collapse;
+    padding-right: 20px;
+    
+  }
+  
+
+  .data-cell {
+    border: 0.5px solid #000;
+    padding: 10px;
+    margin: 50px;
+    font-family: lato;
+    font-weight: 500;
+    font-size: 14;
+    color: #6A6666;
+    
+  }
+  
+  .data-row {
+    margin-bottom: 1000px;
+  }
+  
+  .header-cell {
+    border: 0.5px solid #000;
+    padding: 10px;
+    margin: 50px;
+    background-color: #F4F9FF;
+    font-family: lato;
+    align-items: stretch;
+    text-align: start;
+
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  p-dropdown {
+    margin-left: 25vw;
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #533466;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px; 
+  }
+  
+  
+  .department-heading {
+    font-size: 20px;
+    font-family: lato;
+    font-weight: 700;
+    color: #191B1C;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  

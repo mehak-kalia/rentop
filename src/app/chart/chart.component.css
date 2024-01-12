@@ -1,0 +1,30 @@
+
+.header-container {
+    align-items: center;
+    margin-bottom: 17px;
+    display: flex;
+    
+  }
+  p-dropdown {
+    
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #533466;
+    border: 1px solid #E0E0E0;
+    
+    border-radius: 2px; 
+  }
+  
+  
+  .department-heading {
+    font-size: 16px;
+    font-family: lato;
+    font-weight: 700;
+    color: #1E1B39;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+  }
+  

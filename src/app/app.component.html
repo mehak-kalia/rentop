@@ -1,0 +1,97 @@
+<div class="menubar-container">
+  <p-menubar [model]="[]"></p-menubar>
+</div>
+
+<div class="main-container">
+  <div class="custom-heading">Corporate Conflict of Interest</div>
+
+
+  <div class="navbar">
+    <div class="nav-item" [ngStyle]="{ 'border-bottom': activeTab === 'report' ? '2px solid darkblue' : '', 'color': activeTab === 'report' ? 'darkblue' : '#333' }" (click)="setActiveTab('report')">Report</div>
+    <div class="nav-item" [ngStyle]="{ 'border-bottom': activeTab === 'user-progress' ? '2px solid darkblue' : '', 'color': activeTab === 'user-progress' ? 'darkblue' : '#333' }" (click)="setActiveTab('user-progress')">User Progress</div>
+  </div>
+  
+  
+  <div class="">
+    <div class="row">
+
+<div class="col-12 col-md-6" style="   justify-content: space-between;
+">
+  <p-card [style]="{ 'margin-left': '20px' , 'margin-right' : '20px', 'margin-top':'15px','background-color': '#F8FAFC', 'box-shadow': '0 1px 1px rgba(0, 0, 0, 0.1)', 'border-radius': '10px' , 'height': '150px' ,'justify-content': 'space-between','width':  '800px',   'display': 'flex'
+}">
+    <ng-template pTemplate="content">
+      <div class="row">
+        <div class="p-col-4 col-md-6" style="margin-left: 30px; margin-right: 30px;">
+          <div class="section text-center">
+            <i class="pi pi-user" style="font-size: 24px; color: #0065D0;"></i>
+            <div class="number">1.1K</div>
+            <div class="bottom-text">Total Enrolments</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="p-col-4" style="margin-left: 30px; margin-right: 30px;">
+          <div class="section text-center">
+            <i class="pi pi-calendar" style="font-size: 24px; color: #EE942B;"></i>
+            <div class="number">15</div>
+            <div class="bottom-text">Yet to Start</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="p-col-4" style="margin-left: 30px; margin-right: 30px;">
+          <div class="section text-center">
+            <i class="pi pi-spin pi-spinner" style="font-size: 24px; color: #EB6C54;"></i>
+            <div class="number">50</div>
+            <div class="bottom-text">In-Progress</div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="p-col-4" style="margin-left: 30px; margin-right: 30px;">
+          <div class="section text-center">
+            <i class="pi pi-check" style="font-size: 24px; color: green;"></i>
+            <div class="number">50</div>
+            <div class="bottom-text">Completed</div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-card>
+</div>
+
+<p-card [style]="{ 'background-color': '#F8FAFC', 'box-shadow': '0 1px 1px rgba(0, 0, 0, 0.1)', 'border-radius': '10px', 'margin-left': '20px' , 'margin-right' : '20px', 'margin-top':'15px', 'height': '150px' ,'width':  '500px'}">
+  <ng-template pTemplate="content">
+    <div class="row">
+      <div class="p-col-4 col-md-6" style="margin-left: 30px; margin-right: 30px;">
+        <div class="section text-center" style="margin-left: 50px;">
+          <i class="pi pi-chart-bar" style="font-size: 24px; color: #FA38C4 ;"></i>
+          <div class="number">75%</div>
+          <div class="bottom-text">Average Progress</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="p-col-6" style="margin-left: 30px; margin-right: 30px;">
+        <div class="section text-center">
+          <i class="pi pi-clock" style="font-size: 24px; color: #7868FF;"></i>
+          <div class="number">42 Min</div>
+          <div class="bottom-text">Average Spend Time</div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-card>
+
+      
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row-container">
+      <app-table> </app-table>
+      <app-chart></app-chart>
+    </div>
+  </div>
+  
+  
+  
+  
+</div>
+

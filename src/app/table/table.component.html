@@ -1,0 +1,29 @@
+<div class="header-container">
+  <h1 class="department-heading">Department</h1>
+  
+  <p-dropdown [options]="chartOptions" (ngModel)="selectedChart" optionLabel="label"></p-dropdown>
+</div>
+
+<p-table [value]="data" styleClass="p-datatable-striped p-datatable-gridlines custom-table">
+  <ng-template pTemplate="header">
+    <tr>
+      <th class="header-cell" >
+        {{cols[0].header}}
+      </th>
+      <th class="header-cell" style="width: 150px;">
+        {{cols[1].header}}
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-rowIndex="rowIndex">
+    <tr [pSelectableRow]="rowData" class="data-row">
+      <td class="data-cell">
+        {{rowData[cols[0].field]}}
+      </td>
+      <td class="data-cell">
+        {{rowData[cols[1].field]}}
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+

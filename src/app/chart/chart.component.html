@@ -1,0 +1,15 @@
+<div class="header-container">
+        <h1 class="department-heading">Department performance over time</h1>
+        
+        <div style="width: 20vw;"></div>
+        <p-dropdown [options]="chartOptions" (ngModel)="selectedChart" optionLabel="label"></p-dropdown>
+      </div>
+<canvas baseChart
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [type]="'bar'"
+        style="width: 45vw; height: 30vh;">
+</canvas>
+
